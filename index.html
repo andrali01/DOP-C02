@@ -508,16 +508,16 @@ h1.hero .highlight{
     AWS Certified
   </div>
   <h1 class="hero">DevOps Engineer<br/><span class="highlight">Professional</span></h1>
-  <p class="subtitle">DOP-C02 &nbsp;Â·&nbsp; Simulado Completo &nbsp;Â·&nbsp; Practice Exam</p>
+  <p class="subtitle">DOP-C02 &nbsp;·&nbsp; Simulado Completo &nbsp;·&nbsp; Practice Exam</p>
 
   <div class="stats-row">
     <div class="stat-pill">
       <span class="stat-num" id="total-q">389</span>
-      <span style="color:var(--text2);font-size:13px">QuestÃµes</span>
+      <span style="color:var(--text2);font-size:13px">Questões</span>
     </div>
     <div class="stat-pill">
       <span class="stat-num">6</span>
-      <span style="color:var(--text2);font-size:13px">DomÃ­nios</span>
+      <span style="color:var(--text2);font-size:13px">Domínios</span>
     </div>
     <div class="stat-pill">
       <span class="stat-num">75%</span>
@@ -527,25 +527,25 @@ h1.hero .highlight{
 
   <div class="mode-grid">
     <div class="mode-card selected" data-mode="study" onclick="selectMode('study')">
-      <div class="mode-icon">ðŸ“š</div>
+      <div class="mode-icon">📚</div>
       <div class="mode-title">Modo Estudo</div>
-      <div class="mode-desc">Veja a resposta certa imediatamente apÃ³s cada questÃ£o. Ideal para aprender.</div>
-      <div class="mode-badge">PADRÃƒO</div>
+      <div class="mode-desc">Veja a resposta certa imediatamente após cada questão. Ideal para aprender.</div>
+      <div class="mode-badge">PADRÃO</div>
     </div>
     <div class="mode-card" data-mode="exam" onclick="selectMode('exam')">
-      <div class="mode-icon">ðŸŽ¯</div>
+      <div class="mode-icon">🎯</div>
       <div class="mode-title">Modo Exame</div>
       <div class="mode-desc">Simula o exame real. Respostas reveladas somente no final.</div>
     </div>
     <div class="mode-card" data-mode="wrong" onclick="selectMode('wrong')">
-      <div class="mode-icon">ðŸ”</div>
+      <div class="mode-icon">🔁</div>
       <div class="mode-title">Revisar Erros</div>
-      <div class="mode-desc">Pratique apenas as questÃµes que vocÃª errou na sessÃ£o anterior.</div>
+      <div class="mode-desc">Pratique apenas as questões que você errou na sessão anterior.</div>
     </div>
   </div>
 
   <div class="start-config">
-    <div class="config-label">NÃºmero de QuestÃµes</div>
+    <div class="config-label">Número de Questões</div>
     <div class="config-row" id="qty-btns">
       <button class="qty-btn active" onclick="selectQty(20)">20</button>
       <button class="qty-btn" onclick="selectQty(40)">40</button>
@@ -555,10 +555,10 @@ h1.hero .highlight{
     </div>
   </div>
 
-  <button class="btn-start" onclick="startQuiz()">Iniciar Simulado â†’</button>
+  <button class="btn-start" onclick="startQuiz()">Iniciar Simulado →</button>
 
   <p style="margin-top:20px;font-size:12px;color:var(--text3)">
-    Ãšltima sessÃ£o: <span id="last-session">â€“</span>
+    Última sessão: <span id="last-session">–</span>
   </p>
 </div>
 
@@ -576,7 +576,7 @@ h1.hero .highlight{
       </div>
     </div>
     <div class="timer-wrap" id="timer-wrap">
-      <span>â±</span>
+      <span>⏱</span>
       <span id="timer-display">00:00</span>
     </div>
     <button onclick="endQuiz()" style="background:transparent;border:1px solid var(--border);color:var(--text3);border-radius:8px;padding:6px 14px;cursor:pointer;font-size:12px;font-family:'Sora',sans-serif;transition:.2s" onmouseover="this.style.borderColor='var(--danger)';this.style.color='var(--danger)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text3)'">Encerrar</button>
@@ -600,15 +600,15 @@ h1.hero .highlight{
 
     <div class="quiz-actions">
       <button class="btn-check" id="btn-check" onclick="checkAnswer()">Verificar</button>
-      <button class="btn-next show" id="btn-next" onclick="nextQuestion()" style="display:none">PrÃ³xima â†’</button>
+      <button class="btn-next show" id="btn-next" onclick="nextQuestion()" style="display:none">Próxima →</button>
       <button class="btn-skip" onclick="skipQuestion()">Pular</button>
     </div>
   </div>
 
   <div class="score-float">
-    <span class="score-correct">âœ“ <span id="score-correct">0</span></span>
-    <span class="score-wrong">âœ— <span id="score-wrong">0</span></span>
-    <span style="color:var(--text3)">â€”</span>
+    <span class="score-correct">✓ <span id="score-correct">0</span></span>
+    <span class="score-wrong">✗ <span id="score-wrong">0</span></span>
+    <span style="color:var(--text3)">—</span>
     <span style="color:var(--text2);font-family:'JetBrains Mono',monospace"><span id="score-pct">0</span>%</span>
   </div>
 </div>
@@ -616,8 +616,8 @@ h1.hero .highlight{
 <!-- ===== RESULTS SCREEN ===== -->
 <div id="results" class="screen" style="flex-direction:column;align-items:center">
   <div class="result-grade" id="result-pct">--</div>
-  <div class="result-status" id="result-status">â€“</div>
-  <div class="result-sub" id="result-sub">â€“</div>
+  <div class="result-status" id="result-status">–</div>
+  <div class="result-sub" id="result-sub">–</div>
 
   <div class="result-stats">
     <div class="result-stat">
@@ -639,15 +639,15 @@ h1.hero .highlight{
   </div>
 
   <div class="result-btns">
-    <button class="btn-action btn-primary" onclick="restartSameConfig()">ðŸ” Refazer</button>
-    <button class="btn-action btn-secondary" onclick="toggleReview()" id="btn-review">ðŸ“‹ Ver RevisÃ£o</button>
-    <button class="btn-action btn-secondary" onclick="goHome()">ðŸ  Menu Principal</button>
+    <button class="btn-action btn-primary" onclick="restartSameConfig()">🔁 Refazer</button>
+    <button class="btn-action btn-secondary" onclick="toggleReview()" id="btn-review">📋 Ver Revisão</button>
+    <button class="btn-action btn-secondary" onclick="goHome()">🏠 Menu Principal</button>
   </div>
   <br/>
 
   <div class="review-section" id="review-section">
     <div class="review-title">
-      ðŸ“‹ RevisÃ£o de QuestÃµes
+      📋 Revisão de Questões
       <span style="font-size:12px;color:var(--text3);font-weight:400" id="review-count"></span>
     </div>
     <div class="cat-filter" id="review-filter">
@@ -762,7 +762,7 @@ function renderQuestion() {
 
   const isMulti = q.answers.length > 1;
   const badge = document.getElementById('q-type-badge');
-  badge.textContent = isMulti ? `MÃºltipla (${q.answers.length})` : 'Ãšnica';
+  badge.textContent = isMulti ? `Múltipla (${q.answers.length})` : 'Única';
   badge.className = `q-type-badge ${isMulti ? 'multi' : 'single'}`;
 
   document.getElementById('q-text').textContent = q.question;
@@ -846,8 +846,8 @@ function checkAnswer() {
   const res = document.getElementById('reveal-result');
   res.className = 'reveal-result ' + (isCorrect ? 'pass' : 'fail');
   res.innerHTML = isCorrect
-    ? 'âœ… Correto! Excelente resposta.'
-    : `âŒ Incorreto. Resposta correta: <strong>${q.answers.join(', ')}</strong>`;
+    ? '✅ Correto! Excelente resposta.'
+    : `❌ Incorreto. Resposta correta: <strong>${q.answers.join(', ')}</strong>`;
 
   document.getElementById('reveal-explanation').textContent =
     `Resposta(s) correta(s): ${q.answers.map(a => `[${a}] ${q.options[a]}`).join(' | ')}`;
@@ -915,12 +915,12 @@ function endQuiz() {
   const passed = pct >= 75;
 
   document.getElementById('result-pct').textContent = pct + '%';
-  document.getElementById('result-status').textContent = passed ? 'ðŸŽ‰ APROVADO!' : 'ðŸ“– Continue estudando';
+  document.getElementById('result-status').textContent = passed ? '🎉 APROVADO!' : '📖 Continue estudando';
   document.getElementById('result-status').style.color = passed ? 'var(--accent3)' : 'var(--danger)';
   document.getElementById('result-sub').textContent =
     passed
-      ? 'VocÃª atingiu o score mÃ­nimo para aprovaÃ§Ã£o no DOP-C02!'
-      : `VocÃª precisa de pelo menos 75% para ser aprovado. Faltou ${75 - pct}%.`;
+      ? 'Você atingiu o score mínimo para aprovação no DOP-C02!'
+      : `Você precisa de pelo menos 75% para ser aprovado. Faltou ${75 - pct}%.`;
 
   document.getElementById('res-correct').textContent = state.correct;
   document.getElementById('res-wrong').textContent = state.wrong;
@@ -948,7 +948,7 @@ function renderReview(filter = 'all') {
   if (filter === 'wrong') items = items.filter(a => !a.correct);
   if (filter === 'correct') items = items.filter(a => a.correct);
 
-  document.getElementById('review-count').textContent = `(${items.length} questÃµes)`;
+  document.getElementById('review-count').textContent = `(${items.length} questões)`;
 
   items.forEach(a => {
     const div = document.createElement('div');
@@ -956,7 +956,7 @@ function renderReview(filter = 'all') {
     div.innerHTML = `
       <div class="ri-header">
         <span class="ri-num">Q.${String(a.id).padStart(3,'0')}</span>
-        <span class="ri-status ${a.correct ? 'ok' : 'nok'}">${a.correct ? 'âœ“ CORRETO' : 'âœ— ERRADO'}</span>
+        <span class="ri-status ${a.correct ? 'ok' : 'nok'}">${a.correct ? '✓ CORRETO' : '✗ ERRADO'}</span>
         ${a.skipped ? '<span style="font-size:11px;color:var(--text3)">PULADA</span>' : ''}
         <span style="font-size:11px;color:var(--text3);margin-left:auto">Resposta: ${a.correctAns.join(', ')}</span>
       </div>
@@ -976,7 +976,7 @@ function toggleReview() {
   const sec = document.getElementById('review-section');
   sec.classList.toggle('show');
   const btn = document.getElementById('btn-review');
-  btn.textContent = sec.classList.contains('show') ? 'âŒ Fechar RevisÃ£o' : 'ðŸ“‹ Ver RevisÃ£o';
+  btn.textContent = sec.classList.contains('show') ? '❌ Fechar Revisão' : '📋 Ver Revisão';
 }
 
 function restartSameConfig() {
@@ -991,7 +991,7 @@ function goHome() {
   const ls = JSON.parse(localStorage.getItem('lastSession') || 'null');
   if (ls) {
     document.getElementById('last-session').textContent =
-      `${ls.date} â€” ${ls.pct}% (${ls.correct}/${ls.total})`;
+      `${ls.date} — ${ls.pct}% (${ls.correct}/${ls.total})`;
   }
   showScreen('home');
 }
@@ -1008,7 +1008,7 @@ function showScreen(id) {
   const ls = JSON.parse(localStorage.getItem('lastSession') || 'null');
   if (ls) {
     document.getElementById('last-session').textContent =
-      `${ls.date} â€” ${ls.pct}% (${ls.correct}/${ls.total})`;
+      `${ls.date} — ${ls.pct}% (${ls.correct}/${ls.total})`;
   }
   document.getElementById('total-q').textContent = QUESTIONS_DB.length;
 })();
