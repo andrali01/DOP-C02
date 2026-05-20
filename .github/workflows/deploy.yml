@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to Azure Static Web Apps
+      - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: 3131e9d5944c7efac1bc04a628041cfaf64dec306243ba66644e3672b812006907-dd2617cd-c35f-466b-ab15-b7a51297c1d400f2016005fe710f
           action: upload
           app_location: /
-          output_location: /
+          output_location: ""
           skip_app_build: true
+          is_static_export: true
