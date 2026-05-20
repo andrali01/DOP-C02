@@ -1,0 +1,19 @@
+name: Deploy DOP-C02
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: bcb8f3a2ae7dfbbb089981ce096b22c3efc4d9023d99ae30d3e6ccb0de6ccd3607-d58d6ed5-3b5e-498b-915e-4b3ce6c3973d00f180103fe9fe0f
+          action: upload
+          app_location: "/"
+          skip_app_build: true
