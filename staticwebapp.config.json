@@ -1,1 +1,16 @@
-{"navigationFallback":{"rewrite":"/index.html"},"mimeTypes":{".js":"application/javascript"}}
+{
+    "mimeTypes":  {
+                      ".html":  "text/html",
+                      ".js":  "application/javascript"
+                  },
+    "globalHeaders":  {
+                          "Cache-Control":  "no-cache"
+                      },
+    "navigationFallback":  {
+                               "rewrite":  "/index.html",
+                               "exclude":  [
+                                               "/*.js",
+                                               "/*.css"
+                                           ]
+                           }
+}
